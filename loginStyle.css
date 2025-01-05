@@ -1,0 +1,172 @@
+@import 'animation.css';
+
+/*Reset default style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul li{
+    list-style: none;
+}
+
+button{
+    all: unset;
+    border: none;
+    cursor: pointer;
+}
+
+input{
+    outline: none;
+}
+
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+   all:unset;
+   color: inherit;
+   text-align: inherit;
+}
+
+div {
+    all: unset;
+}
+
+:root{ 
+    --theme-color: #72BF78;
+    --sidebar-color:#D3EE98;
+    --hover-color: #A0D683;
+    --list-box-color: #FAE364;
+    --text-color: #000000;
+    --title-color: #FFA24C;
+}
+
+
+
+/*Header style*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    text-align: center;
+    font-family: bradley hand, cursive;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+header > .title {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+/* Main style */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 60px;
+    font-family: bradley hand, cursive;
+    color: var(--text-color);
+}
+
+/*Container style*/
+
+.login-card {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--list-box-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Content style */
+
+.login-title {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/*.login-card > .title {
+    display: inline-block;
+    padding: 0 0.5rem;
+    font-size: 1.125rem;
+    background-color: var(--title-color);
+    border-radius: 5px;
+}*/
+
+
+.login-msg > .text {
+    font-size: 14px;
+    text-align: center;
+    color: red;
+    margin-bottom: 5px;
+}
+
+/*Add login error msg box hidden*/
+/*.hidden {
+    display: none;
+}*/
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*gap: 15px;*/
+    /* position: relative; */
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+form input {
+    display: block;
+    width: 200px;
+}
+
+.login-btn-container{
+    display: block;
+    align-items: center;
+}
+
+.login-btn {
+    display: block;
+    margin-left: 24px;
+    align-items: center;
+    width: 150px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--title-color);
+}
+
+.sign-up-link-container {
+    width: 150px;
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--title-color);
+}

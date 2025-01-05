@@ -1,0 +1,16 @@
+/* Animation for hide and show task cards*/
+.pop-up{
+    animation: popUp 2s
+}
+
+.fade-in {
+    animation: fadeIn .8s;
+}
+@keyframes fadeIn {
+     0% {
+        opacity: 0;
+     }
+     100% {
+        opacity: 1;
+     }
+}
